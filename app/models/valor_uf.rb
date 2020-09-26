@@ -1,2 +1,0 @@
-class ValorUf < ApplicationRecord
-end
