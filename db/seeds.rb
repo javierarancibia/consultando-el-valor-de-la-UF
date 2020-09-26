@@ -5,3 +5,23 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Price.destroy_all 
+
+Price.create(
+    [
+        {
+            date: '2020-01-01',
+            value: 25650
+        }
+    ]
+)
+
+            
+
+
+
+
+
+
+
