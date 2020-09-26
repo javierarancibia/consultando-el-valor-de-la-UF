@@ -1,4 +1,6 @@
 class PricesController < ApplicationController
+    include ActionController::HttpAuthentication::Basic::ControllerMethods
+    http_basic_authenticate_with name: "juan", password: "12345", except: :index
 
 
     def index
