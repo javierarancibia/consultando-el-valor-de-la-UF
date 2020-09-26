@@ -10,7 +10,7 @@ class PricesController < ApplicationController
     def show
         @price = Price.find_by(date: params[:date])
 
-        render json: @price  
+        render json: @price
     end
 
 end
