@@ -10,8 +10,30 @@ class PricesController < ApplicationController
     def show
         @price = Price.find_by(date: params[:date])
 
-        render json: @price
+        if @price.length > 0
+            render json: @price
+        else 
+            rnder json: { message: 'No se encuentra el valor de la fecha ingresada'}
+        end
+
     end
 
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

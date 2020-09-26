@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   get 'prices', to: 'prices#index'
   get 'prices/:date', to: 'prices#show'
 
+end
  
 
-end
